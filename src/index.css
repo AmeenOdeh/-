@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-quran: 'Amiri Quran', 'Scheherazade New', 'Amiri', serif;
+    --font-cairo: 'Cairo', system-ui, sans-serif;
+  }
+}
+
+.font-quran {
+  font-family: 'Amiri Quran', 'Scheherazade New', 'Amiri', serif;
+  line-height: 2.2;
+}
+
+.font-uthmani {
+  font-family: 'Scheherazade New', 'Amiri', serif;
+}
+
+.font-cairo {
+  font-family: 'Cairo', system-ui, sans-serif;
+}
+
+/* Custom subtle dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0C10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D3540;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Ayah end ornament symbol */
+.ayah-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Scheherazade New', 'Cairo', serif;
+  font-size: 0.8em;
+  line-height: 1;
+}
+
+/* Gold glow / pulse animation for active reading in Sophisticated Dark */
+@keyframes highlight-glow-gold {
+  0%, 100% {
+    background-color: rgba(212, 175, 55, 0.12);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+  }
+  50% {
+    background-color: rgba(212, 175, 55, 0.22);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+  }
+}
+
+.active-ayah-highlight {
+  animation: highlight-glow-gold 2.5s ease-in-out infinite;
+  border-radius: 0.75rem;
+}
+
+.gold-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.35);
+}
+

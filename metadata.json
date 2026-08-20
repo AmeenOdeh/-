@@ -1,0 +1,6 @@
+{
+  "name": "القرآن الكريم - مصحف التلاوة والتفسير",
+  "description": "تطبيق متكامل لتلاوة وتدبر القرآن الكريم مع التفاسير الميسرة، الاستماع بأصوات مشاهير القراء، التظليل الذكي، والفواصل المرجعية",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
